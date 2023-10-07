@@ -1,0 +1,29 @@
+.welcomeContainer{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.h1, .p{
+    font-family: var(--font-Dancing);
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.p{
+    font-family: var(--font-Roboto);
+    font-size: 3.5rem;
+}
+.span{
+    color: var(--secundary-font-clr);
+    font-weight: 900;
+}
+@media(max-width: 480px ) {
+    .h1{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
