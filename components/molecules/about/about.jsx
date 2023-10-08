@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./about.module.css";
-import Image from "next/image";
 
 export const About = () => {
   return (
@@ -15,10 +14,8 @@ export const About = () => {
         </h2>
         <p>
           "I bring a diverse background, with a strong focus on Front-End
-          Development. My experience includes military aviation electronics work,
-          teaching English, and proficiency in SQL databases like PostgreSQL and  MySQL. I also have hands-on expertise with Front-End technologies like
-          React and Next.js, enabling me to create innovative and precise
-          solutions."
+          Development. Although I work teaching english as a foreing language, I´ve been diving into the world of technologies like Html, CSS, JavaScript,
+          React and Next.js. I also have hands-on expertise with SQL databases like PostgreSQL and  MySQL, enabling me to provide innovative and precise solutions."
         </p>
       </div>
     </div>

@@ -1,0 +1,30 @@
+export const projectsDataBase = [
+  {
+    Proyecto: "Responsive Desing",
+    Descripción: "This is a project worked with basic html and css, following a Platzi class.",
+    URL: "https://jama8806.github.io/ResponsiveDesign/",
+    Tecnologías: "html, css",
+    Photo: "https://lh3.googleusercontent.com/drive-viewer/AK7aPaAB7XmwmhaqzZw6CTzWdrUdM3Xh7M0WZUfZHaY1Rg2IZlu8TNdE2Rxob87sCTYbDUZxDn8yN_Fi4ZASr3g8aYfYctfs6g=s1600"
+  },
+  {
+    Proyecto: "Swipe",
+    Descripción: "This project was developed as the first Sprint on DevTools Bootcamp. It is based on HTML and CSS only.",
+    URL: "https://jama8806.github.io/SWIPE/",
+    Tecnologías: "html, css",
+    Photo: "https://lh3.googleusercontent.com/drive-viewer/AK7aPaB43oTAoljFFU8Uee9TUBaG9JMkPipyXl2TwLy9lwycAcuJE2ffslqqQE2Y06rOSY16tcT62tNocX9sRXjyeXL1p66gZw=s1600"
+  },
+  {
+    "Proyecto": "Hotels",
+    Descripción: "This project was developed as the third Sprint on DevTools Bootcamp. In here the purpose was to introduce the DOM manipulation using Vanilla JavaScript",
+    URL: "https://jama8806.github.io/hotels/",
+    Tecnologías: "html,css, javaScript",
+    Photo: "https://lh3.googleusercontent.com/drive-viewer/AK7aPaBX7nMclfu9McLw-ISUuI9Y1zxI63c4AQWgG5ZudKeGRwQG2nmMOnepOdtR_Yodem9FSRirTuRINH2Qdjq_H7LjdxPLfA=s1600"
+  },
+  {
+    "Proyecto": "Hotels -React - NextJs",
+    Descripción: "This project was developed as the fourth and last Sprint on DevTools Bootcamp. This time the objective was to migrate what was done on the previous Sprint and implement it on React and NextJs technologies.",
+    URL: "https://hotels-react-next-js.vercel.app/",
+    Tecnologías: "html,css, javaScript, react, nextJs",
+    Photo: "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDnkl7nIVns95-I-K0MUxXjiK0waiHD3x50wr0Ib3hlvMIG-VzZ7dyFuxAEJ_wn4WQHqIaa2zCW2ScEHWRh7pLqXUgu=s1600"
+  }
+]

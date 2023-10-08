@@ -1,19 +1,23 @@
-.sectionContainer{
+.sectionContainer {
     margin-top: 4rem;
     display: flex;
     gap: 2rem;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    max-width: 90%;
 }
-.imgContainer{
+
+.imgContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12rem;
-    height: 11rem;
+    width: 13rem;
+    height: 15rem;
     position: relative;
 }
-.imgContainer::after{
+
+.imgContainer::after {
     z-index: -1;
     position: absolute;
     display: inline-block;
@@ -25,9 +29,10 @@
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    border: var(--secundary-font-clr) solid ;
+    border: var(--secundary-font-clr) solid;
 }
-.imgContainer::before{
+
+.imgContainer::before {
     z-index: -1;
     position: absolute;
     display: inline-block;
@@ -35,26 +40,62 @@
     left: 0;
     content: "";
     background-color: rgba(1, 65, 255, 0.4);
-    transform: rotate(-15deg);
+    transform: rotate(10deg);
     width: 100%;
     height: 100%;
     border-radius: 5%;
 }
-.imgContainer img{
-    width: 10rem ;
+
+.imgContainer img {
+    width: 10rem;
     height: 10rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.infoContainer{
+.infoContainer {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     justify-content: space-evenly;
 }
 
-.infoContainer h2 b{
+/* .infoContainer h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--cinder-light);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.46875rem;
+} */
+
+.infoContainer h2 b {
     color: var(--secundary-font-clr);
     font-weight: bold;
+}
+
+@media (min-width:650px) {
+    .sectionContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5rem;
+    }
+
+    .infoContainer {
+        max-width: 500px;
+    }
+
+    .imgContainer {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .imgContainer img {
+        width: 15rem;
+        height: 15rem;
+    }
 }
