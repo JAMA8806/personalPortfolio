@@ -11,6 +11,7 @@ export const Portfolio = () => {
       <Welcome></Welcome>
       <About></About>
       <ProjectCard></ProjectCard>
+      <About></About>
     </div>
   );
 };
