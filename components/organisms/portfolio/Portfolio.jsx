@@ -3,7 +3,8 @@ import { Welcome } from "../../molecules/Welcome/welcome";
 import { About } from "../../molecules/about/about";
 import { ProjectCard } from "../../molecules/ProjectCard/ProjectCard";
 import styles from "./Portfolio.module.css"
-import UncontrolledExample from "../../molecules/ProjectCard/Slider";
+import { Skills } from "../../molecules/skills/Skill";
+
 
 export const Portfolio = () => {
   return (
@@ -11,6 +12,7 @@ export const Portfolio = () => {
       <Welcome></Welcome>
       <About></About>
       <ProjectCard></ProjectCard>
+      <Skills></Skills>
       <About></About>
     </div>
   );

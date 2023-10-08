@@ -24,7 +24,7 @@ export const ProjectCard = () => {
                 <p>{Descripción}</p>
 
                 <img
-                  src="/icons/share.svg"
+                  src="/icons/goTo.svg"
                   alt="share-icon"
                   className={styles.icon}></img>
               </div>

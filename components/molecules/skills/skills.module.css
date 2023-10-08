@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 10rem auto;
+  width: 100%;
+  padding: 0.5rem;
+  justify-content: center;
+  text-align: initial;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.title h2 b {
+  color: var(--secundary-font-clr);
+  font-weight: bold;
+}
+
+.secondaryContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.educationContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.eduCard {
+  display: flex;
+  gap: 3rem;
+  border-bottom: var(--light4) 1px solid;
+  padding-bottom: 0.5rem;
+}
+.eduCard img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.eduContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.eduContent p:nth-child(1) {
+    opacity: 0.5;
+    transform: translateY(2px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.eduContent p:nth-child(n + 2) {
+  opacity: 0;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.5s ease, transform 0.5s ease, display 0.5 ease; /* Agrega transiciones */
+  transform: translateY(20px);
+  display: none;
+}
+
+.eduCard:hover .eduContent p:nth-child(n){
+    opacity: 1;
+    transform: translateY(0);
+    text-align: initial;
+    display: block;
+}
+
+.skillsColumn {
+  max-width: 100%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.skillsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.skill{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.skill img{
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.titleBarCont{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.barContainer{
+  display: flex;
+  min-width: 300px;
+  width: 90%;
+  height: 0.75rem;
+  background-color: var(--light4);
+  border-radius: 200px;
+}
+
+.barProgres{
+  height: 0.75rem;
+  background-color: var(--secundary-font-clr);
+  border-radius: 200px;
+  width: 90%;
+  left: 0;
+}
+
+@media screen and(min-width:750px) and (max-widht:900px){
+  /* .container{
+    justify-content:space-between
+  } */
+  .skillsColumn{
+    max-width: 600px;
+  }
+}
+
+@media (min-width:900px){
+  .secondaryContainer{
+    justify-content: space-between;
+  }
+  .skillsColumn{
+    width: 45%;
+  }
+  .educationContainer{
+    max-width: 40%;
+  }
+}
