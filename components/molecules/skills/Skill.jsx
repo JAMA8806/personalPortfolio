@@ -1,7 +1,9 @@
 import styles from "./skills.module.css";
 import skillsDatabase from "../../../services/skillsDB/skillsDataBase.js";
-
+import certifications from "../../../services/certificationsDB/certifications";
+import Link from "next/link";
 export const Skills = () => {
+  const cert = certifications;
   const skData = skillsDatabase;
   return (
     <div className={styles.container}>
@@ -63,7 +65,7 @@ export const Skills = () => {
           </div>
           <div className={styles.eduCard}>
             <img
-              src="/icons/fac1.png"
+              src="/icons/fac.png"
               alt="FAC"
               className={styles.edIcon}
             />
@@ -86,12 +88,13 @@ export const Skills = () => {
           </p>
           <div className={styles.skillsContainer}>
             {skData.map((skill, index) => {
-              const {name,icon,score}=skill;
+              const { name, icon, score } = skill;
               return (
-                <div 
-                key={index}
-                className={styles.skill}>
+                <div
+                  key={index}
+                  className={styles.skill}>
                   <img
+                    className={styles.icon}
                     src={`./icons/${name}.svg`}
                     alt={name}
                   />
@@ -100,12 +103,9 @@ export const Skills = () => {
                       <strong>{name}</strong>
                     </p>
                     <div className={styles.barContainer}>
-                      <div 
-                      className={styles.barProgres}
-                      style={{width:20*score +'%'}}
-                      >
-
-                      </div>
+                      <div
+                        className={styles.barProgres}
+                        style={{ width: 20 * score + "%" }}></div>
                     </div>
                   </div>
                 </div>
@@ -113,6 +113,46 @@ export const Skills = () => {
             })}
           </div>
         </div>
+      </div>
+      <h3 className={styles.h3Cert} 
+      >Courses and <strong>Certifications</strong></h3>
+      <div className={styles.certificationsContainer}>
+        {cert.map((cert, index) => {
+          const { image, url, name, Instituto, year } = cert;
+          return (
+            <Link
+              href={url}
+              key={index}>
+              <div className={styles.certCard}>
+                
+                <img
+                  src={image}
+                  alt={name}
+                  className={styles.edIcon}
+                />
+                <div className={styles.certCardInfo}>
+                  <p>
+                    <strong>{name}</strong>
+                  </p>
+                  <p>{Instituto}</p>
+                  <p>
+                    <strong>{year}</strong>
+                  </p>
+                  <div className={styles.iconsCont}>
+                    <img
+                      src="./icons/download.svg"
+                      alt="goTo"
+                    />
+                    <img
+                      src="./icons/open.svg"
+                      alt="open"
+                    />
+                  </div>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

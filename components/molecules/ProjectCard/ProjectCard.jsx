@@ -13,6 +13,7 @@ export const ProjectCard = () => {
           const { Photo, Proyecto, Descripción, URL } = project;
           return (
             <Link
+              className={styles.blur}
               key={index}
               href={URL}>
               <div className={styles.projectCard}>

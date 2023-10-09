@@ -43,7 +43,7 @@
   border-bottom: var(--light4) 1px solid;
   padding-bottom: 0.5rem;
 }
-.eduCard img {
+.edIcon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -60,9 +60,9 @@
 }
 
 .eduContent p:nth-child(1) {
-    opacity: 0.5;
-    transform: translateY(2px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0.5;
+  transform: translateY(2px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .eduContent p:nth-child(n + 2) {
   opacity: 0;
@@ -73,11 +73,11 @@
   display: none;
 }
 
-.eduCard:hover .eduContent p:nth-child(n){
-    opacity: 1;
-    transform: translateY(0);
-    text-align: initial;
-    display: block;
+.eduCard:hover .eduContent p:nth-child(n) {
+  opacity: 1;
+  transform: translateY(0);
+  text-align: initial;
+  display: block;
 }
 
 .skillsColumn {
@@ -86,32 +86,32 @@
   display: flex;
   flex-direction: column;
 }
-.skillsContainer{
+.skillsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 
-.skill{
+.skill {
   width: 100%;
   display: flex;
   gap: 1rem;
 }
 
-.skill img{
+.icon {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
 }
 
-.titleBarCont{
+.titleBarCont {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.barContainer{
+.barContainer {
   display: flex;
   min-width: 300px;
   width: 90%;
@@ -120,7 +120,7 @@
   border-radius: 200px;
 }
 
-.barProgres{
+.barProgres {
   height: 0.75rem;
   background-color: var(--secundary-font-clr);
   border-radius: 200px;
@@ -128,23 +128,149 @@
   left: 0;
 }
 
-@media screen and(min-width:750px) and (max-widht:900px){
+@media screen and(min-width:750px) and (max-widht: 900px) {
   /* .container{
     justify-content:space-between
   } */
-  .skillsColumn{
+  .skillsColumn {
     max-width: 600px;
   }
 }
 
-@media (min-width:900px){
-  .secondaryContainer{
+@media (min-width: 900px) {
+  .secondaryContainer {
     justify-content: space-between;
   }
-  .skillsColumn{
+  .skillsColumn {
     width: 45%;
   }
-  .educationContainer{
+  .educationContainer {
     max-width: 40%;
+  }
+}
+
+.skill:hover .icon {
+  animation: jello-horizontal 0.9s linear both;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.eduCard:hover .edIcon {
+  animation: jello-horizontal 0.9s linear both;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.certificationsContainer {
+  width: 300px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow-x: scroll;
+  overflow-y: visible;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 10px;
+  align-self: center;
+  
+}
+.certificationsContainer::-webkit-scrollbar-track {
+  background-color: rgba(240, 248, 255, 0.007);
+}
+.h3Cert {
+  margin: 4rem 0 0;
+}
+.h3Cert strong {
+  color: var(--secundary-font-clr);
+}
+
+.certCard {
+  border-radius: 10px;
+  width: 290px;
+  height: 150px;
+  border: var(--light4) solid 1px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+  padding: 0.5rem;
+}
+
+.certCardInfo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+  gap: 2px;
+}
+
+.iconsCont {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.iconsCont img {
+  width: 1rem;
+  height: 1rem;
+}
+@media (min-width: 600px) {
+  .certificationsContainer {
+    width: 600px;
+  }
+}
+
+@media (min-width: 900px) {
+  .certificationsContainer {
+    width: 100%;
+    max-width: 900px;
+    gap: 3.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .certificationsContainer {
+    width: 100%;
+    max-width: 1038px;
   }
 }
