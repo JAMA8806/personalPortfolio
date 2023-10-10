@@ -16,7 +16,7 @@ export const WorkExperience = () => {
     const trabajo = trabajos.filter(
       (work) => work.Option == opcionSeleccionada
     );
-    setFilteredWork(trabajo)
+    setFilteredWork(trabajo[0])
     console.log(trabajo);
   }, [opcionSeleccionada]);
 
