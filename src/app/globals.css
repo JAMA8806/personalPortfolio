@@ -111,7 +111,7 @@
 
 
 body {
-  /* color: rgb(var(--foreground-rgb)); */
+  color: rgb(var(--foreground-rgb));
   /* background: linear-gradient(
       to bottom,
       transparent,
@@ -119,8 +119,8 @@ body {
     )
     rgb(var(--background-start-rgb)); */
     /* dark mode test*/
-    color: #ffff;
-    background-color: #222222;
+    /* color: #ffff; */
+    background-color: white;
     display: grid;
     align-items: center;
     width: 100vw;

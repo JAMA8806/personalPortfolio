@@ -1,7 +1,7 @@
-import { SvgIcon } from "@mui/material";
 import { projectsDataBase } from "../../../services/projectsDataBase";
 import styles from "./ProjectCard.module.css";
 import Link from "next/link";
+import { Link as LinkIcon } from "@mui/icons-material";
 
 export const ProjectCard = () => {
   const projDataBase = projectsDataBase;
@@ -23,11 +23,7 @@ export const ProjectCard = () => {
 
                 <h3>{Proyecto}</h3>
                 <p>{Descripción}</p>
-
-                <img
-                  src="/icons/goTo.svg"
-                  alt="share-icon"
-                  className={styles.icon}></img>
+                <LinkIcon className={styles.icon}></LinkIcon>
               </div>
             </Link>
           );

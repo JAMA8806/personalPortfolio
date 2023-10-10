@@ -2,8 +2,10 @@ import styles from "./skills.module.css";
 import skillsDatabase from "../../../services/skillsDB/skillsDataBase.js";
 import certifications from "../../../services/certificationsDB/certifications";
 import Link from "next/link";
+import { Download, Link as LinkIcon } from "@mui/icons-material";
+import { Image } from "react-bootstrap";
+
 export const Skills = () => {
-  const cert = certifications;
   const skData = skillsDatabase;
   return (
     <div className={styles.container}>
@@ -114,8 +116,17 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <h3 className={styles.h3Cert} 
-      >Courses and <strong>Certifications</strong></h3>
+    </div>
+  );
+};
+
+export const Certifications = () => {
+  const cert = certifications;
+  return (
+    <div className={styles.container}>
+      <h3 className={styles.h3Cert}>
+        Courses and <strong>Certifications</strong>
+      </h3>
       <div className={styles.certificationsContainer}>
         {cert.map((cert, index) => {
           const { image, url, name, Instituto, year } = cert;
@@ -124,11 +135,10 @@ export const Skills = () => {
               href={url}
               key={index}>
               <div className={styles.certCard}>
-                
                 <img
                   src={image}
                   alt={name}
-                  className={styles.edIcon}
+                  className={styles.certIcon}
                 />
                 <div className={styles.certCardInfo}>
                   <p>
@@ -139,20 +149,48 @@ export const Skills = () => {
                     <strong>{year}</strong>
                   </p>
                   <div className={styles.iconsCont}>
-                    <img
-                      src="./icons/download.svg"
-                      alt="goTo"
-                    />
-                    <img
-                      src="./icons/open.svg"
-                      alt="open"
-                    />
+                    <Download></Download>
+                    <LinkIcon></LinkIcon>
                   </div>
                 </div>
               </div>
             </Link>
           );
         })}
+      </div>
+      <div className={styles.langCont}>
+        <h3>Languages</h3>
+        <div className={styles.lang}>
+          <div className={styles.langCard}>
+            <Image
+            className={styles.certIcon}
+              src="/icons/col.png"
+              alt="colombia"
+              
+            />
+            <h2>Español</h2>
+            <p>Nativo</p>
+          </div>
+          <div className={styles.langCard}>
+            <Image
+            className={styles.certIcon}
+              src="/icons/english.png"
+              alt="english"
+            />
+            <h2>English</h2>
+            <p>C1 - Advanced</p>
+          </div>
+
+          <div className={styles.langCard}>
+            <Image
+            className={styles.certIcon}
+              src="/icons/frances.png"
+              alt="french"
+            />
+            <h2>Français</h2>
+            <p>A1 - Débutant</p>
+          </div>
+        </div>
       </div>
     </div>
   );

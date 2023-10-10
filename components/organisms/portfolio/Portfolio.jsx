@@ -3,7 +3,7 @@ import { Welcome } from "../../molecules/Welcome/welcome";
 import { About } from "../../molecules/about/about";
 import { ProjectCard } from "../../molecules/ProjectCard/ProjectCard";
 import styles from "./Portfolio.module.css"
-import { Skills } from "../../molecules/skills/Skill";
+import { Certifications, Skills } from "../../molecules/skills/Skill";
 
 
 export const Portfolio = () => {
@@ -13,6 +13,7 @@ export const Portfolio = () => {
       <About></About>
       <ProjectCard></ProjectCard>
       <Skills></Skills>
+      <Certifications></Certifications>
       <About></About>
     </div>
   );

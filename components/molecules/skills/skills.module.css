@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 10rem auto;
+  margin: 3rem auto;
   width: 100%;
   padding: 0.5rem;
   justify-content: center;
@@ -43,7 +43,7 @@
   border-bottom: var(--light4) 1px solid;
   padding-bottom: 0.5rem;
 }
-.edIcon {
+.edIcon, .certIcon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -152,6 +152,9 @@
 .skill:hover .icon {
   animation: jello-horizontal 0.9s linear both;
 }
+.certCard:hover .certIcon{
+  animation: jello-horizontal 0.9s linear both;
+}
 @keyframes jello-horizontal {
   0% {
     transform: scale3d(1, 1, 1);
@@ -178,31 +181,9 @@
 .eduCard:hover .edIcon {
   animation: jello-horizontal 0.9s linear both;
 }
-@keyframes jello-horizontal {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
 
-.certificationsContainer {
+
+.certificationsContainer  {
   width: 300px;
   padding: 2rem;
   display: flex;
@@ -212,8 +193,16 @@
   overflow-y: visible;
   scroll-snap-type: x mandatory;
   scroll-padding: 10px;
-  align-self: center;
-  
+  align-self: center;  
+}
+
+.lang{
+  margin-top: 1rem;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 .certificationsContainer::-webkit-scrollbar-track {
   background-color: rgba(240, 248, 255, 0.007);
@@ -238,13 +227,20 @@
   padding: 0.5rem;
 }
 
-.certCardInfo {
+.certCardInfo, .langCard {
+  
   padding: 10px;
   display: flex;
   flex-direction: column;
   text-align: initial;
   gap: 2px;
 }
+.langCard{
+  width: 290px;
+  align-items: center;
+  text-align: center;
+}
+
 
 .iconsCont {
   display: flex;
@@ -255,21 +251,29 @@
   width: 1rem;
   height: 1rem;
 }
+
+.langCont{
+  margin-top: 3rem;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  text-align: initial;
+}
 @media (min-width: 600px) {
-  .certificationsContainer {
+  .certificationsContainer, .lang {
     width: 600px;
   }
 }
 
 @media (min-width: 900px) {
-  .certificationsContainer {
+  .certificationsContainer, .lang {
     width: 100%;
     max-width: 900px;
     gap: 3.5rem;
   }
 }
 @media (min-width: 1200px) {
-  .certificationsContainer {
+  .certificationsContainer, .lang {
     width: 100%;
     max-width: 1038px;
   }
