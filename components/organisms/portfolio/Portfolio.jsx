@@ -4,6 +4,7 @@ import { About } from "../../molecules/about/about";
 import { ProjectCard } from "../../molecules/ProjectCard/ProjectCard";
 import styles from "./Portfolio.module.css"
 import { Certifications, Skills } from "../../molecules/skills/Skill";
+import { WorkExperience } from "../../molecules/work/WorkExperience";
 
 
 export const Portfolio = () => {
@@ -14,6 +15,7 @@ export const Portfolio = () => {
       <ProjectCard></ProjectCard>
       <Skills></Skills>
       <Certifications></Certifications>
+      <WorkExperience></WorkExperience>
       <About></About>
     </div>
   );
