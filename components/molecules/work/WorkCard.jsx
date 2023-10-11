@@ -5,7 +5,7 @@ import styles from "./workExperience.module.css"
 export const TarjetaTrabajo = ({ trabajo }) => {
 
   return (
-    <div className={styles.card}>
+    <div className={styles.cardInfo}>
       <h3>{trabajo.Empresa}</h3>
       <p>Year: {trabajo.Año}</p>
       <p>Position: {trabajo.Cargo}</p>
