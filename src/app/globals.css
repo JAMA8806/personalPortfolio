@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400;600&family=Roboto:ital,wght@0,300;1,300;1,400&display=swap');
 
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(240, 248, 255, 0.007);
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #f2eef3;
+  border-radius: 66px;
+  border: 1px solid #ffffff;
+}
 :root {
 
-  *::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background-color: rgba(240, 248, 255, 0.007);
-  }
-
-  *::-webkit-scrollbar-thumb {
-    width: 5px;
-    background-color: #f2eef3;
-    border-radius: 66px;
-    border: 1px solid #ffffff;
-  }
   --cinder-color:#232E35;
   --cinder-light:#656D72;
   --light2:#F1F1F1;
   --light4:#D9D9D9;
-
+  --bgMain: white;
   --secundary-font-clr: #7E74F1;
 
 
@@ -120,7 +120,7 @@ body {
     rgb(var(--background-start-rgb)); */
     /* dark mode test*/
     /* color: #ffff; */
-    background-color: white;
+    background-color: var(--bgMain);
     display: grid;
     align-items: center;
     width: 100vw;
@@ -142,6 +142,13 @@ h3{
     line-height: 1.5rem;
     /* 200% */
     letter-spacing: 0.46875rem;
+}
+div[id]{
+  scroll-margin-top: 70px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {

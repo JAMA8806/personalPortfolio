@@ -21,7 +21,7 @@ export const WorkExperience = () => {
   }, [opcionSeleccionada]);
 
   return (
-    <div className={styles.workSection}>
+    <div className={styles.workSection} id="workExperience">
       <h3 className={styles.title}>Work Experience</h3>
       <div className={styles.content}>
         <Menu

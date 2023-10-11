@@ -1,6 +1,8 @@
 .workSection {
   display: flex;
   flex-wrap: wrap;
+   /* height: 100vh; */
+  margin: 10rem auto;
 }
 
 .content {
@@ -117,4 +119,11 @@
       transform: rotate(8deg);
     }
   }
+}
+
+@media (min-width:600px) {
+    .content{
+        margin: 13rem auto;
+    }
+
 }

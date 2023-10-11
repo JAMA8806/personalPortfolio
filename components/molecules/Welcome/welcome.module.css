@@ -1,10 +1,13 @@
 .welcomeContainer{
+    margin: 10rem auto 5rem;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
     padding: 0.5rem;
+    /* height: 100vh; */
 }
 .h1{
+    margin-top: 3rem;
     font-family: var(--font-Dancing);
     font-size: 5rem;
     font-weight: 700;
@@ -21,6 +24,7 @@
     font-weight: 900;
 }
 @media(max-width: 480px ) {
+
     .h1{
         font-size: 4rem;
         font-weight: 700;

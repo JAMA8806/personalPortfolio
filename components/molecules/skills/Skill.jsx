@@ -8,7 +8,7 @@ import { Image } from "react-bootstrap";
 export const Skills = () => {
   const skData = skillsDatabase;
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="skills">
       <div className={styles.title}>
         <h3>Learning Path</h3>
         <h2>
@@ -123,7 +123,7 @@ export const Skills = () => {
 export const Certifications = () => {
   const cert = certifications;
   return (
-    <div className={styles.container}>
+    <div className={styles.containerCourses} id="certifications">
       <h3 className={styles.h3Cert}>
         Courses and <strong>Certifications</strong>
       </h3>

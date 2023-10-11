@@ -3,7 +3,7 @@ import styles from "./about.module.css";
 
 export const About = () => {
   return (
-    <div className={styles.sectionContainer}>
+    <div className={styles.sectionContainer} id="about">
       <div className={styles.imgContainer}>
         <img src="/images/profilePic.jpg"/>
       </div>

@@ -6,7 +6,7 @@ import { Link as LinkIcon } from "@mui/icons-material";
 export const ProjectCard = () => {
   const projDataBase = projectsDataBase;
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="projects">
       <h3 className={styles.h3}>Projects</h3>
       <div className={styles.projectCardsContainer}>
         {projDataBase.map((project, index) => {

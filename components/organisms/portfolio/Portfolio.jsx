@@ -11,22 +11,20 @@ export const Portfolio = () => {
   const [currentSection, setCurrentSection] = useState("welcome");
   console.log(currentSection);
 
-
-
   const handleSectionChange = (section) => {
     setCurrentSection(section);
   };
   return (
     <div className={styles.container}>
-      <Breadcrumb 
-      selected={currentSection}
-      handleSectionChange={handleSectionChange}></Breadcrumb>
-      {currentSection === "welcome" && <Welcome />}
-      {currentSection === "about" && <About />}
-      {currentSection === "projects" && <ProjectCard />}
-      {currentSection === "skills" && <Skills />}
-      {currentSection === "certifications" && <Certifications />}
-      {currentSection === "workExperience" && <WorkExperience />}
+      <Breadcrumb
+        selected={currentSection}
+        handleSectionChange={handleSectionChange}></Breadcrumb>
+      <Welcome data-section="welcome" id="welcome" />
+      <About data-section="about" id="about" />
+      <ProjectCard data-section="projects" id="projects"/>
+      <Skills data-section="skills" id="skills"/>
+      <Certifications data-section="certifications" id="certifications" />
+      <WorkExperience data-section="workExperience" id="workExperience" />
     </div>
   );
 };
