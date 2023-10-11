@@ -1,11 +1,18 @@
+import { useState } from "react";
+import styles from "./workExperience.module.css"
 const Menu = ({handleOpcionClick}) => {
-  
+    const [selected, setSelected] = useState("Option4")
+    
+    const Click = (option)=>{
+        handleOpcionClick(option)
+        setSelected(option)
+    }
   return (
-    <div>
-      <div onClick={() => handleOpcionClick('Option1')}>Opción 1</div>
-      <div onClick={() => handleOpcionClick('Option2')}>Opción 2</div>
-      <div onClick={() => handleOpcionClick('Option3')}>Opción 3</div>
-      <div onClick={() => handleOpcionClick('Option4')}>Opción 4</div>
+    <div className={styles.menu}>
+      <div className={`${styles.options} ${selected ==="Option4"? styles.selected : ''}`} onClick={() => Click('Option4')}><p>FrontEnd Trainee</p></div>
+      <div className={`${styles.options} ${selected ==="Option3"? styles.selected : ''}`} onClick={() => Click('Option3')}><p>Technical Inspector</p></div>
+      <div className={`${styles.options} ${selected ==="Option2"? styles.selected : ''}`} onClick={() => Click('Option2')}><p>Electronics Technitian</p></div>
+      <div className={`${styles.options} ${selected ==="Option1"? styles.selected : ''}`} onClick={() => Click('Option1')}><p>TEFL Instructor</p></div>
     </div>
   );
 };

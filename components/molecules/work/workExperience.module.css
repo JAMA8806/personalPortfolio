@@ -1,0 +1,61 @@
+.workSection{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten cuando el espacio es insuficiente */
+    justify-content: center;
+
+}
+
+.title{
+    padding: 20px;
+    text-align: left;
+}
+
+.menu{
+    display: flex;
+    flex: 1; /* Toma el 50% del ancho en pantallas grandes */
+    padding: 20px 20px 0;
+    top:1rem;
+    gap: 3%;
+    justify-content:space-around;
+    text-align: center;
+    align-items:center
+}
+
+
+.options{
+    background-color: white;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 100%;
+    height: 3rem ;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.selected{
+    background-color: #f2f2f2;
+}
+
+.card{
+    flex: 1; /* Toma el espacio disponible junto al menú */
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .workContainer {
+        flex-direction: column; /* Cambia a disposición de columna en pantallas más pequeñas */
+    }
+
+    .title, .menu, .card {
+        flex: none; /* Restaura el ancho predeterminado en pantallas más pequeñas */
+        width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+    }
+}

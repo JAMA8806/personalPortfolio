@@ -1,19 +1,19 @@
 // components/TarjetaTrabajo.js
 import React from 'react';
+import styles from "./workExperience.module.css"
 
 export const TarjetaTrabajo = ({ trabajo }) => {
-    const workInfo = trabajo;
 
   return (
-    <div className="tarjeta-trabajo">
-      <h3>{workInfo.Empresa}</h3>
-      <p>Año: {workInfo.Año}</p>
-      <p>Cargo: {workInfo.Cargo}</p>
+    <div className={styles.card}>
+      <h3>{trabajo.Empresa}</h3>
+      <p>Year: {trabajo.Año}</p>
+      <p>Position: {trabajo.Cargo}</p>
       <ul>
-        <li>{workInfo.Tarea1}</li>
-        <li>{workInfo.Tarea2}</li>
-        <li>{workInfo.Tarea3}</li>
-        <li>{workInfo.Tarea4}</li>
+        <li>{trabajo.Tarea1}</li>
+        <li>{trabajo.Tarea2}</li>
+        <li>{trabajo.Tarea3}</li>
+        <li>{trabajo.Tarea4}</li>
       </ul>
     </div>
   );
