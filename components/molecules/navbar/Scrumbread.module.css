@@ -1,0 +1,29 @@
+.selected{
+    font-weight: bolder;
+    font-size: large;
+    color: var(--secundary-font-clr);
+}
+
+.scrumbread{
+    position: fixed;
+    margin: 1rem 0;
+    z-index: +2;
+    background-color: var(--bgmain);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.cv:active{
+    font-weight: bolder;
+    font-size: large;
+    color: var(--secundary-font-clr);
+}
+
+.darkModeSwitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+}
