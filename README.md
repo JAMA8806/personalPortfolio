@@ -35,5 +35,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-# personalPortfolio
-This is going to be my personal portfolio. Here you will find a "resume" of my skills and my experience throughout my development learning proccess.
+# Personal Portfolio
+This is going to be my personal portfolio. Here you will find a *resume* of my skills and my experience throughout my development learning proccess.
