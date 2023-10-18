@@ -18,7 +18,7 @@ export const Skills = () => {
       <div className={styles.secondaryContainer}>
         <div className={styles.educationContainer}>
           <div className={styles.eduCard}>
-            <img
+            <Image
               src="/icons/devTools.jpg"
               alt="devTools academy"
               className={styles.edIcon}
@@ -34,7 +34,7 @@ export const Skills = () => {
             </div>
           </div>
           <div className={styles.eduCard}>
-            <img
+            <Image
               src="/icons/Platzi.jpg"
               alt="Platzi"
               className={styles.edIcon}
@@ -50,7 +50,7 @@ export const Skills = () => {
             </div>
           </div>
           <div className={styles.eduCard}>
-            <img
+            <Image
               src="/icons/cecar.jpeg"
               alt="Cecar"
               className={styles.edIcon}
@@ -66,7 +66,7 @@ export const Skills = () => {
             </div>
           </div>
           <div className={styles.eduCard}>
-            <img
+            <Image
               src="/icons/fac.png"
               alt="FAC"
               className={styles.edIcon}
@@ -95,7 +95,7 @@ export const Skills = () => {
                 <div
                   key={index}
                   className={styles.skill}>
-                  <img
+                  <Image
                     className={styles.icon}
                     src={`./icons/${name}.svg`}
                     alt={name}
@@ -135,7 +135,7 @@ export const Certifications = () => {
               href={url}
               key={index}>
               <div className={styles.certCard}>
-                <img
+                <Image
                   src={image}
                   alt={name}
                   className={styles.certIcon}

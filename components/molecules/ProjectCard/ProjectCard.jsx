@@ -17,9 +17,9 @@ export const ProjectCard = () => {
               key={index}
               href={URL}>
               <div className={styles.projectCard}>
-                <img
+                <Image
                   src={Photo}
-                  alt={`Photo of ${Proyecto}`}></img>
+                  alt={`Photo of ${Proyecto}`}></Image>
 
                 <h3>{Proyecto}</h3>
                 <p>{Descripción}</p>
