@@ -2,6 +2,7 @@ import { projectsDataBase } from "../../../services/projectsDataBase";
 import styles from "./ProjectCard.module.css";
 import Link from "next/link";
 import { Link as LinkIcon } from "@mui/icons-material";
+import Image from "next/image";
 
 export const ProjectCard = () => {
   const projDataBase = projectsDataBase;

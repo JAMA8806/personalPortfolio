@@ -14,9 +14,9 @@ export const About = () => {
           Julián <b>Martínez</b>
         </h2>
         <p>
-          "I bring a diverse background, with a strong focus on Front-End
+          I bring a diverse background, with a strong focus on Front-End
           Development. Although I work teaching english as a foreing language, I have been diving into the world of technologies like Html, CSS, JavaScript,
-          React and Next.js. I also have hands-on expertise with SQL databases like PostgreSQL and  MySQL, enabling me to provide innovative and precise solutions."
+          React and Next.js. I also have hands-on expertise with SQL databases like PostgreSQL and  MySQL, enabling me to provide innovative and precise solutions.
         </p>
       </div>
     </div>
