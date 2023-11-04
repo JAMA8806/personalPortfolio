@@ -6,6 +6,7 @@ import styles from "./Scrumbread.module.css";
 import { Switch } from "@mui/material";
 import { DarkMode } from "@mui/icons-material";
 
+
 export default function Breadcrumb({ handleSectionChange, selected }) {
   function handleClick(event) {
     handleSectionChange(event);
@@ -14,58 +15,52 @@ export default function Breadcrumb({ handleSectionChange, selected }) {
   return (
     <div className={styles.scrumbread}>
       <Breadcrumbs aria-label="breadcrumb">
-        <Link
+        <div
           className={`${selected === "welcome" ? styles.selected : ""}`}
           underline="hover"
           color="inherit"
-          href="#welcome"
           onClick={() => handleClick("welcome")}>
           Welcome
-        </Link>
-        <Link
+        </div>
+        <div
           className={`${selected === "about" ? styles.selected : ""}`}
           underline="hover"
           color="inherit"
-          href="#about"
           onClick={() => handleClick("about")}>
           About Me
-        </Link>
-        <Link
+        </div>
+        <div
           className={`${selected === "projects" ? styles.selected : ""}`}
           underline="hover"
           color="text.primary"
-          href="#projects"
           onClick={() => handleClick("projects")}
           aria-current="page">
           Projects
-        </Link>
-        <Link
+        </div>
+        <div
           className={`${selected === "skills" ? styles.selected : ""}`}
           underline="hover"
           color="text.primary"
-          href="#skills"
           onClick={() => handleClick("skills")}
           aria-current="page">
           Skills
-        </Link>
-        <Link
+        </div>
+        <div
           className={`${selected === "certifications" ? styles.selected : ""}`}
           underline="hover"
           color="text.primary"
-          href="#certifications"
           onClick={() => handleClick("certifications")}
           aria-current="page">
           Certifications
-        </Link>
-        <Link
+        </div>
+        <div
           className={`${selected === "workExperience" ? styles.selected : ""}`}
           underline="hover"
           color="text.primary"
-          href="#workExperience"
           onClick={() => handleClick("workExperience")}
           aria-current="page">
           Work Experience
-        </Link>
+        </div>
         <Link
           className={styles.cv}
           underline="hover"

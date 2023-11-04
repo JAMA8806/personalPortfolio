@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <div className={styles.sectionContainer} id="about">
       <div className={styles.ImageContainer}>
-        <Image className={styles.profilePic} src="/images/profilePic.jpg" alt='Profile-pic'/>
+        <Image width='60' height='60' className={styles.profilePic} src="/images/profilePic.jpg" alt='Profile-pic'/>
       </div>
       <div className={styles.infoContainer}>
         <h3>My name is</h3>

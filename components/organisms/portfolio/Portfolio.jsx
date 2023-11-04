@@ -3,13 +3,14 @@ import { Welcome } from "../../molecules/Welcome/welcome";
 import { About } from "../../molecules/about/about";
 import { ProjectCard } from "../../molecules/ProjectCard/ProjectCard";
 import styles from "./Portfolio.module.css";
-import { Certifications, Skills } from "../../molecules/skills/Skill";
+import {Skills } from "../../molecules/skills/Skill";
 import { WorkExperience } from "../../molecules/work/WorkExperience";
 import Breadcrumb from "../../molecules/navbar/Scrumbread";
+import { Certifications } from "../../molecules/Certifications/Certifications";
 
 export const Portfolio = () => {
   const [currentSection, setCurrentSection] = useState("welcome");
-  console.log(currentSection);
+  //console.log(currentSection);
 
   const handleSectionChange = (section) => {
     setCurrentSection(section);
@@ -19,12 +20,12 @@ export const Portfolio = () => {
       <Breadcrumb
         selected={currentSection}
         handleSectionChange={handleSectionChange}></Breadcrumb>
-      <Welcome data-section="welcome" id="welcome" />
-      <About data-section="about" id="about" />
-      <ProjectCard data-section="projects" id="projects"/>
-      <Skills data-section="skills" id="skills"/>
-      <Certifications data-section="certifications" id="certifications" />
-      <WorkExperience data-section="workExperience" id="workExperience" />
+      {currentSection === 'welcome' && <Welcome/>}
+        {currentSection === 'about' && <About/>}
+      {currentSection === 'projects' && <ProjectCard/>}
+        {currentSection === 'skills' && <Skills/>}
+      {currentSection === 'certifications' && <Certifications/>}
+        {currentSection === 'workExperience' && <WorkExperience/>}
     </div>
   );
 };
