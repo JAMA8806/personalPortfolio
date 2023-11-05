@@ -4,15 +4,31 @@
     color: var(--secundary-font-clr);
 }
 
-.scrumbread{
+.menuIcon{
+    display: none;
+}
+
+.navBar{
     position: fixed;
-    margin: 1rem 0;
+    margin-inline: auto;
+    padding: 1rem;
     z-index: +2;
-    background-color: var(--bgmain);
+    background-color: var(--bgMain);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: auto;
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    cursor: pointer;
+}
+
+.breadCrumbContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.3rem;
+    flex: 4;
 }
 
 .cv:active{
@@ -26,4 +42,44 @@
     justify-content: center;
     align-items: center;
     margin: 0 3rem;
+}
+
+@media  (max-width:850px) {
+    .menuIcon{
+        display: inline-block;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .breadCrumbContainer{
+        visibility: hidden;
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        top: 3rem;
+        left: 0;
+        background-color: var(--bgMain);
+        gap: 2rem;
+        border: solid 1px var(--light4);
+        border-radius: 5px;
+        width: 20rem;
+        padding: 4rem;
+    }
+    .navBar{
+        justify-content: space-between;
+        padding-inline: 2rem;
+        position: fixed;
+    }
+
+    .active{
+      visibility: visible;
+      transition: all 1s ease;
+        
+    }
+    .darkModeSwitch{
+        margin: 0;
+    }
 }

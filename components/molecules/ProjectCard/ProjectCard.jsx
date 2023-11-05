@@ -19,8 +19,8 @@ export const ProjectCard = () => {
               href={URL}>
               <div className={styles.projectCard}>
                 <Image
-                  width={0}
-                  height={0}
+                  width={400}
+                  height={200}
                   src={Photo}
                   alt={`Photo of ${Proyecto}`}></Image>
 

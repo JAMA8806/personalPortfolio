@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
    /* height: 100vh; */
-  margin: 10rem auto;
+  margin: 7rem auto;
 }
 
 .content {
@@ -64,9 +64,10 @@
   padding-left: 1.5rem;
 }
 
-@media (min-width: 570px) {
+@media (min-width: 600px) {
   .content {
     gap: 2rem;
+    margin: 4rem auto;
   }
   .card{
     flex: 5;
@@ -119,11 +120,4 @@
       transform: rotate(8deg);
     }
   }
-}
-
-@media (min-width:600px) {
-    .content{
-        margin: 13rem auto;
-    }
-
 }
