@@ -34,8 +34,8 @@ export const Certifications = () => {
                       <strong>{year}</strong>
                     </p>
                     <div className={styles.iconsCont}>
-                      <Download></Download>
-                      <LinkIcon></LinkIcon>
+                      <Download style={{ color: 'var(--cinder-color)'}}></Download>
+                      <LinkIcon style={{ color: 'var(--cinder-color)'}}></LinkIcon>
                     </div>
                   </div>
                 </div>

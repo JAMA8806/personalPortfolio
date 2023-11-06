@@ -9,6 +9,7 @@
 }
 
 .navBar{
+
     position: fixed;
     margin-inline: auto;
     padding: 1rem;
@@ -30,7 +31,9 @@
     gap: 0.3rem;
     flex: 4;
 }
-
+.cv{
+    color: var(--cinder-color);
+}
 .cv:active{
     font-weight: bolder;
     font-size: large;

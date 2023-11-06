@@ -221,6 +221,7 @@
 }
 .h3Cert {
   margin: 4rem 0 0;
+  padding: 2rem;
 }
 .h3Cert strong {
   color: var(--secundary-font-clr);

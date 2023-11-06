@@ -1,12 +1,10 @@
 import * as React from "react";
-
-import Link from "@mui/material/Link";
 import { useState } from "react";
 import styles from "./Scrumbread.module.css";
-import { Switch } from "@mui/material";
 import { DarkMode } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Menu } from "./Menu";
+import Switche from "../../atoms/icons/Switch";
 
 export default function Breadcrumb({ handleSectionChange, selected }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +16,7 @@ export default function Breadcrumb({ handleSectionChange, selected }) {
   return (
     <div className={styles.navBar}>
       <div className={styles.menuIcon} onClick={toggleMenu}>
-        <MenuIcon></MenuIcon>
+        <MenuIcon style={{ color: 'var(--cinder-color)'}}></MenuIcon>
       </div>
       <Menu
         handleSectionChange={handleSectionChange}
@@ -27,8 +25,8 @@ export default function Breadcrumb({ handleSectionChange, selected }) {
         open={menuOpen}
       ></Menu>
       <div className={styles.darkModeSwitch}>
-        <Switch></Switch>
-        <DarkMode></DarkMode>
+        <Switche></Switche>
+        <DarkMode style={{ color: 'var(--cinder-color)'}}></DarkMode>
       </div>
     </div>
   );

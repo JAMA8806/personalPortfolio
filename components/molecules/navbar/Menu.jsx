@@ -13,23 +13,23 @@ export const Menu = ({handleSectionChange, selected, toggleMenu, open}) => {
     
     <div className={`${styles.breadCrumbContainer} ${open? styles.active : ''}`}>
         
-          <div
+          <p
             className={`${selected === "welcome" ? styles.selected : ""}`}
             underline="hover"
             color="inherit"
             onClick={() => handleClick("welcome")}
           >
             Welcome
-          </div>
-          <div
+          </p>
+          <p
             className={`${selected === "about" ? styles.selected : ""}`}
             underline="hover"
             color="inherit"
             onClick={() => handleClick("about")}
           >
             About Me
-          </div>
-          <div
+          </p>
+          <p
             className={`${selected === "projects" ? styles.selected : ""}`}
             underline="hover"
             color="text.primary"
@@ -37,8 +37,8 @@ export const Menu = ({handleSectionChange, selected, toggleMenu, open}) => {
             aria-current="page"
           >
             Projects
-          </div>
-          <div
+          </p>
+          <p
             className={`${selected === "skills" ? styles.selected : ""}`}
             underline="hover"
             color="text.primary"
@@ -46,8 +46,8 @@ export const Menu = ({handleSectionChange, selected, toggleMenu, open}) => {
             aria-current="page"
           >
             Skills
-          </div>
-          <div
+          </p>
+          <p
             className={`${
               selected === "certifications" ? styles.selected : ""
             }`}
@@ -57,8 +57,8 @@ export const Menu = ({handleSectionChange, selected, toggleMenu, open}) => {
             aria-current="page"
           >
             Certifications
-          </div>
-          <div
+          </p>
+          <p
             className={`${
               selected === "workExperience" ? styles.selected : ""
             }`}
@@ -68,7 +68,7 @@ export const Menu = ({handleSectionChange, selected, toggleMenu, open}) => {
             aria-current="page"
           >
             Work Experience
-          </div>
+          </p>
           <Link
             className={styles.cv}
             underline="hover"
