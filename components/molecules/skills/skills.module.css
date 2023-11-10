@@ -229,7 +229,7 @@
 
 .certCard {
   border-radius: 10px;
-  width: 290px;
+  width: 250px;
   height: 150px;
   border: var(--light4) solid 1px;
   display: flex;
@@ -238,6 +238,7 @@
   align-items: center;
   scroll-snap-align: center;
   padding: 0.5rem;
+  font-size: small;
 }
 
 .certCardInfo, .langCard {

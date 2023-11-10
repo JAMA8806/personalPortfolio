@@ -8,5 +8,6 @@
   overflow-x: scroll;
   color: var(--cinder-light);    
   background-color: var(--bgMain);
+  height: 100vh;
 }
 

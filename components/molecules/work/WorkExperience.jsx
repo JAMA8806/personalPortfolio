@@ -22,7 +22,7 @@ export const WorkExperience = () => {
 
   return (
     <div className={styles.workSection} id="workExperience">
-      <h3 className={styles.title}>Work Experience</h3>
+      <h3 className={styles.title}>Work <b>Experience</b></h3>
       <div className={styles.content}>
         <Menu
           className={styles.menu}

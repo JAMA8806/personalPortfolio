@@ -88,19 +88,23 @@
 }
 
 
-body {
+body.body{
   color: rgb(var(--cinder-light));    
     display: grid;
     align-items: center;
     width: 100vw;
     margin: 0 auto;
     overflow-x: visible;
-    
+    height: 100vh; 
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+b{
+  color: var(--secundary-font-clr);
 }
 
 p{
@@ -125,7 +129,7 @@ div[id]{
   scroll-margin-top: 70px;
 }
 
-html {
+.html {
   scroll-behavior: smooth;
   background-color: var(--bgMain);
   height: 100vh;

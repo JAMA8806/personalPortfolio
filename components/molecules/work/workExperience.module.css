@@ -29,7 +29,7 @@
 }
 
 .options {
-  background-color: white;
+  background-color: var(--light2);
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   width: 100%;
@@ -37,10 +37,12 @@
   display: grid;
   place-items: center;
   text-align: center;
+  font-size: small;
 }
 
-.selected {
-  background-color: var(--light2);
+.selected p{
+  color: var(--secundary-font-clr);
+  font-weight: bold;
 }
 
 .card {
@@ -55,6 +57,8 @@
   gap: 1rem;
   border-radius: 10px;
   width: 100%;
+  min-height: 350px;
+  justify-content: space-evenly;
 }
 
 .cardInfo p:nth-child(n + 2) {
@@ -81,11 +85,11 @@
   }
   .selected {
     border-radius: 0;
-    background-color: rgba(220, 211, 211, 0.082);
     text-align: initial;
   }
   .selected p {
     font-weight: bold;
+    font-size: small;
     animation: shake-left-right 0.8s linear both;
   }
   .options {
